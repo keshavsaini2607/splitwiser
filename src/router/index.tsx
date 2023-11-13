@@ -1,6 +1,6 @@
 import React from 'react';
-import {NavigationContainer} from '@react-navigation/native';
 import AuthStack from './stacks/AuthStack';
+import {NavigationContainer} from '@react-navigation/native';
 
 const RootRouter = () => {
   return (
