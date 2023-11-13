@@ -30,7 +30,7 @@ export const commonStyleSheet = StyleSheet.create({
     backgroundColor: '#253238',
     color: '#fff',
     width: '95%',
-    borderRadius: 2,
+    borderRadius: 5,
   },
   colorWhite: {
     color: '#fff',
@@ -47,6 +47,16 @@ export const commonStyleSheet = StyleSheet.create({
   noSpace: {
     padding: 0,
     margin: 0,
+  },
+  borderButton: {
+    borderWidth: 1,
+    borderColor: '#272829',
+    borderRadius: 5,
+    width: '95%',
+    alignSelf: 'center',
+  },
+  verticalSpace: {
+    marginVertical: 10,
   },
 });
 

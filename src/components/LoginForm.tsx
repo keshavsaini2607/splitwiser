@@ -3,6 +3,8 @@ import React from 'react';
 import {FormInterface} from '../common/types/FormInterface';
 import DynamicForm from '../common/dynamicForm';
 import AppleLogin from './AppleLogin';
+import GoogleLogin from './GoogleLogin';
+import {commonStyleSheet} from '../common/styles';
 
 let formData: FormInterface = {
   title: 'Login',
@@ -30,7 +32,14 @@ const LoginForm = () => {
   return (
     <View>
       <DynamicForm data={formData} submit={handleLogin} />
-      <View>{Platform.OS === 'ios' && <AppleLogin />}</View>
+      <View style={commonStyleSheet.verticalSpace}>
+        <View style={commonStyleSheet.verticalSpace}>
+          {Platform.OS === 'ios' && <AppleLogin />}
+        </View>
+        <View style={commonStyleSheet.verticalSpace}>
+          <GoogleLogin />
+        </View>
+      </View>
     </View>
   );
 };

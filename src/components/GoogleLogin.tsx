@@ -2,16 +2,16 @@ import React from 'react';
 import {Button} from 'react-native-paper';
 import {commonStyleSheet} from '../common/styles';
 
-const AppleLogin = () => {
+const GoogleLogin = () => {
   return (
     <Button
-      icon={'apple'}
+      icon={'google'}
       onPress={() => console.log('Pressed')}
       textColor="#272829"
       style={commonStyleSheet.borderButton}>
-      Continue with apple
+      Continue with google
     </Button>
   );
 };
 
-export default AppleLogin;
+export default GoogleLogin;

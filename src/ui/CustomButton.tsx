@@ -6,11 +6,16 @@ interface Props {
   title: string;
   click: () => void;
   type?: string;
+  loading?: true | false;
 }
 
-const CustomButton = ({title, click}: Props) => {
+const CustomButton = ({title, click, loading}: Props) => {
   return (
-    <Button onPress={click} style={[commonStyleSheet.primaryButton]}>
+    <Button
+      onPress={click}
+      style={[commonStyleSheet.primaryButton]}
+      loading={loading}
+      disabled={loading}>
       <Text style={[commonStyleSheet.colorWhite]}>{title}</Text>
     </Button>
   );

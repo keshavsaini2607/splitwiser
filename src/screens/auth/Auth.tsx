@@ -78,10 +78,9 @@ const styles = StyleSheet.create({
   headingContainer: {
     paddingVertical: 10,
     backgroundColor: '#253238',
-    height: 150,
+    height: 170,
     flexDirection: 'column',
     justifyContent: 'space-around',
-    gap: 10,
     padding: 8,
     borderBottomLeftRadius: 10,
     borderBottomRightRadius: 10,
@@ -92,12 +91,12 @@ const styles = StyleSheet.create({
     marginVertical: 10,
   },
   tab: {
-    color: '#aaa',
+    color: '#61677A',
   },
   activeTab: {
     // color: '#253238',
-    color: 'blue',
+    color: '#272829',
     borderBottomWidth: 2,
-    borderBottomColor: '#253238',
+    borderBottomColor: '#272829',
   },
 });
