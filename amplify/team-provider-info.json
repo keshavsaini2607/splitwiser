@@ -1,0 +1,20 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-splitwiser-staging-190932-authRole",
+      "UnauthRoleArn": "arn:aws:iam::872052416686:role/amplify-splitwiser-staging-190932-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::872052416686:role/amplify-splitwiser-staging-190932-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-splitwiser-staging-190932-deployment",
+      "UnauthRoleName": "amplify-splitwiser-staging-190932-unauthRole",
+      "StackName": "amplify-splitwiser-staging-190932",
+      "StackId": "arn:aws:cloudformation:us-east-1:872052416686:stack/amplify-splitwiser-staging-190932/2d953470-8258-11ee-a9b8-12f987c4e0c5",
+      "AmplifyAppId": "d3ap0qxhn1739x"
+    },
+    "categories": {
+      "auth": {
+        "Splitwiser": {}
+      }
+    }
+  }
+}
