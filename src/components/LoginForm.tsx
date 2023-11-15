@@ -1,4 +1,4 @@
-import {Platform, View} from 'react-native';
+import {Alert, Platform, View} from 'react-native';
 import React from 'react';
 import {FormInterface} from '../common/types/FormInterface';
 import DynamicForm from '../common/dynamicForm';
@@ -26,8 +26,13 @@ let formData: FormInterface = {
 };
 
 const LoginForm = () => {
-  const handleLogin = (data: FormInterface) => {
-    console.log(data);
+  const handleLogin = async (data: any) => {
+    try {
+      console.log(data);
+      // const response = await Auth.signIn(data.)
+    } catch (error: any) {
+      Alert.alert('Oops', error.message);
+    }
   };
   return (
     <View>

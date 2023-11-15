@@ -31,6 +31,7 @@ export const commonStyleSheet = StyleSheet.create({
     color: '#fff',
     width: '95%',
     borderRadius: 5,
+    padding: 8,
   },
   colorWhite: {
     color: '#fff',
@@ -54,6 +55,7 @@ export const commonStyleSheet = StyleSheet.create({
     borderRadius: 5,
     width: '95%',
     alignSelf: 'center',
+    padding: 8,
   },
   verticalSpace: {
     marginVertical: 10,
@@ -69,7 +71,7 @@ export const formStyles = StyleSheet.create({
   formInput: {
     borderWidth: 1,
     borderColor: '#cdcdcd',
-    padding: 10,
+    padding: 15,
     borderRadius: 4,
   },
   formInputLabel: {

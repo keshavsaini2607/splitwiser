@@ -12,7 +12,13 @@ type props = {
 };
 
 const DynamicForm: React.FC<props> = ({data, submit}) => {
-  const {register, handleSubmit} = useForm();
+  const {register, getValues} = useForm();
+
+  const handleSubmit = () => {
+    const formValues = getValues();
+    console.log({formValues});
+    submit(formValues);
+  };
 
   return (
     <View>
@@ -28,7 +34,7 @@ const DynamicForm: React.FC<props> = ({data, submit}) => {
         </View>
       ))}
       <View style={(commonStyleSheet.flexRow, commonStyleSheet.alignCenter)}>
-        <CustomButton click={() => handleSubmit(submit)} title="Submit" />
+        <CustomButton click={handleSubmit} title="Submit" />
       </View>
     </View>
   );

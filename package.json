@@ -14,6 +14,7 @@
     "@react-native-async-storage/async-storage": "^1.19.5",
     "@react-native-community/netinfo": "^11.1.0",
     "@react-native-masked-view/masked-view": "^0.3.0",
+    "@react-navigation/bottom-tabs": "^6.5.11",
     "@react-navigation/native": "^6.1.9",
     "@react-navigation/stack": "^6.3.20",
     "amazon-cognito-identity-js": "^6.3.7",
